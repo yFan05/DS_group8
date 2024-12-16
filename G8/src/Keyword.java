@@ -19,6 +19,34 @@ public class Keyword {
     public void setCount(double count) {
         this.count = count;
     }
+    public int countKeyword(String keyword) throws IOException{
+		if (content == null){
+		    content = fetchContent();
+		}
+		
+		//To do a case-insensitive search, we turn the whole content and keyword into upper-case:
+		content = content.toUpperCase();
+		keyword = keyword.toUpperCase();
+	
+		int retVal = 0; 
+		int n =content.length();
+		int m = keyword.length();
+		for(int i=0;i<n-m;i++) {
+			int j=0;
+		while(j < m && content.charAt(i+j) == keyword.charAt(j)) {
+			j++;
+		}
+		if(j==m) {
+			retVal ++;
+		}
+		
+		}
+		// 1. calculates appearances of keyword (Bonus: Implement Boyer-Moore Algorithm)
+		
+		
+		return retVal;
+		
+    }
 
     public double getScore() {
         return count * weight; // 計算單一關鍵字的分數
