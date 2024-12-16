@@ -17,3 +17,8 @@ public class Main
      Keyword k6=new Keyword(環境,3);
      Keyword k7=new Keyword(政策,2);
      Keyword k8=new Keyword(法規,2);
+
+    Scanner scanner = new Scanner(System.in);
+    Node url1 = scanner.next();
+    Node url2 = scanner.next();
+    Node url3 = scanner.next();
