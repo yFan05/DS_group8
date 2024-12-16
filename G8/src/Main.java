@@ -9,14 +9,15 @@ public class Main
 {
   public static void main(String[] args) throws IOException {
 
-    Keyword k1=new Keyword(綠色,3);
-    Keyword k2=new Keyword(綠能,3);
-     Keyword k3=new Keyword(能源,3);
-     Keyword k4=new Keyword(氣候,3);
-     Keyword k5=new Keyword(環保,3);
-     Keyword k6=new Keyword(環境,3);
-     Keyword k7=new Keyword(政策,2);
-     Keyword k8=new Keyword(法規,2);
+    ArrayList<Keyword> keywords = new ArrayList<>();
+    keywords.add(new Keyword("綠色",3));
+    keywords.add(new Keyword("綠能",3));
+    keywords.add(new Keyword("能源",3));
+    keywords.add(new Keyword("氣候",3));
+    keywords.add(new Keyword("環保",3));
+    keywords.add(new Keyword("環境",3));
+    keywords.add(new Keyword("政策",2));
+    keywords.add(new Keyword("法規",2));
 
     Scanner scanner = new Scanner(System.in);
     String url1=scanner.next();
