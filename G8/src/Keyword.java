@@ -21,6 +21,6 @@ public class Keyword {
     }
 
     public double getScore() {
-        return count * weight; // 計算單一關鍵字的分
+        return count * weight; // 計算單一關鍵字的分數
     }
 }
