@@ -23,6 +23,4 @@ public class Main
     Node n=new Node(url1,"url1");
     Tree t = new Tree(n);
     
-    Node url1 = scanner.next();
-    Node url2 = scanner.next();
-    Node url3 = scanner.next();
+   
