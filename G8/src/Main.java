@@ -9,7 +9,7 @@ public class Main
 {
   public static void main(String[] args) throws IOException {
 
-    ArrayList<Keyword> keywords = new ArrayList<>();
+    ArrayList<Keyword> keywords = new ArrayList<>();//儲存關鍵字的列表
     keywords.add(new Keyword("綠色",3));
     keywords.add(new Keyword("綠能",3));
     keywords.add(new Keyword("能源",3));
