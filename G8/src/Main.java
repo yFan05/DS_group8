@@ -21,10 +21,10 @@ public class Main
 
     Scanner scanner = new Scanner(System.in);
     String url1=scanner.next();
-    Node n=new Node(url1,"url1");
+    Node n1 = new Node(url1,"url1");
     Tree t = new Tree(n); //第一個url當root
     
     String url1=scanner.next();
-    Node n = new Node(url2,"url2");
-    addChild(n);
+    Node n2 = new Node(url2,"url2");
+    addChild(n2);
    
