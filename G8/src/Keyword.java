@@ -19,6 +19,7 @@ public class Keyword {
     public void setCount(double count) {
         this.count = count;
     }
+   
 
     public double getScore() {
         return count * weight; // 計算單一關鍵字的分數
