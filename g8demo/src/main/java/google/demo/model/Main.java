@@ -1,27 +1,21 @@
 package google.demo.model;
 
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.HttpsURLConnection;
 import javax.net.ssl.SSLSession;
+import google.demo.service.*;
 
 public class Main
 {
 	public static void main(String[] args) throws IOException{
 		//root node
-		WebPage rootPage = new WebPage("http://soslab.nccu.edu.tw/Welcome.html", "Soslab");		
+		WebPage rootPage = new WebPage("http://your-url.com", "RootPage");		
 		WebTree tree = new WebTree(rootPage);
-		//build childnode
-		tree.root.addChild(new WebNode(new WebPage("http://soslab.nccu.edu.tw/Publications.html","Publication")));
-		tree.root.addChild(new WebNode(new WebPage("http://soslab.nccu.edu.tw/Projects.html","Projects")));
-		tree.root.children.get(1).addChild(new WebNode(new WebPage("https://vlab.cs.ucsb.edu/stranger/", "Stranger")));
-		tree.root.addChild(new WebNode(new WebPage("http://soslab.nccu.edu.tw/Members.html", "MEMBER")));
-		tree.root.addChild(new WebNode(new WebPage("http://soslab.nccu.edu.tw/Courses.html","Course")));
-		// This website has something wrong, ignore it.
 		
+		System.out.println(" ");
 		Scanner scanner = new Scanner(System.in);
 
 		while (scanner.hasNextLine()){
@@ -36,7 +30,6 @@ public class Main
 			}
 
 			tree.setPostOrderScore(keywords);
-			tree.eularPrintTree();
 		}
 		scanner.close();
 	}
