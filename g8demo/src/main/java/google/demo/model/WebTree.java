@@ -1,6 +1,4 @@
 package google.demo.model;
-
-
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -19,12 +17,11 @@ public class WebTree{
 		// YOUR TURN
 		// 3. compute the score of children nodes via post-order, then setNodeScore for
 		// startNode
-		for(WebNode child: startNode.children) {
-			setPostOrderScore(child, keywords);
-			
-		}
-		startNode.setNodeScore(keywords);
-
+		 for(WebNode w:startNode.children) {
+			 setPostOrderScore(w,keywords);
+		 }
+		 startNode.setNodeScore(keywords);
+	        startNode.nodeScore += startNode.children.stream().mapToDouble(child -> child.nodeScore).sum();
 	}
 
 	public void eularPrintTree(){
@@ -39,20 +36,12 @@ public class WebTree{
 
 		System.out.print("(");
 		System.out.print(startNode.webPage.name + "," + startNode.nodeScore);
-		
-		// YOUR TURN
-		// 4. print child via pre-order
-		
-		for(WebNode child : startNode.children) {
-			eularPrintTree(child);
-		}
-
-		System.out.print(")");
-
+		 for (WebNode child : startNode.children) {  // Pre-order traversal
+		        eularPrintTree(child);
+		    }
 		if (startNode.isTheLastChild())
 			System.out.print("\n" + repeat("\t", nodeDepth - 2));
 	}
-
 	private String repeat(String str, int repeat){
 		String retVal = "";
 		for (int i = 0; i < repeat; i++){
@@ -61,5 +50,3 @@ public class WebTree{
 		return retVal;
 	}
 }
-
-
