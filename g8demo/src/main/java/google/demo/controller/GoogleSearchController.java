@@ -12,17 +12,17 @@ import java.util.HashMap;
 @CrossOrigin(origins = "http://localhost:8080") // 根據你的前端地址調整
 public class GoogleSearchController {
 
-    @Autowired
-    private GoogleQueryService googleQueryService;
+	@Autowired
+	private GoogleQueryService googleQueryService;
 
-    @GetMapping("/search")
-    public HashMap<String, String> search(@RequestParam("q") String query) {
-    	
-        try {
-            return googleQueryService.search(query);
-        } catch (IOException e) {
-            e.printStackTrace();
-            return new HashMap<>();
-        }
-    }
+	@GetMapping("/search")
+	public HashMap<String, String> search(@RequestParam("q") String query) {
+
+		try {
+			return googleQueryService.search(query);
+		} catch (IOException e) {
+			e.printStackTrace();
+			return new HashMap<>();
+		}
+	}
 }
