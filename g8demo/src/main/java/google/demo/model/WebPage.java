@@ -17,7 +17,7 @@ public class WebPage{
 		return this.url;
 	}
 	public String getTitle() {
-	    return this.name;  // 假設 title 存儲在 'name' 屬性中
+	    	return this.name;  // 假設 title 存儲在 'name' 屬性中
 	}
 
 	public void setScore(ArrayList<Keyword> keywords) throws IOException {
