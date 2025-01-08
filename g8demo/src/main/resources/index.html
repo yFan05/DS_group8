@@ -1,21 +1,52 @@
-
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <title>Boogle🐻</title>
+    <title>Greeny Search🎄</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="container">
-    <h1>Boogle🐻</h1>
-    <form id="search-form">
-        <input type="text" id="query" placeholder="輸入搜尋關鍵字..." required>
-        <button type="submit">搜尋</button>
-    </form>
-    <div id="results"></div>
-</div>
-
-<script src="script.js"></script>
+    <div class="container">
+        <h1>Greeny Search🎄</h1>
+        <form id="search-form">
+            <input type="text" id="query" placeholder="輸入搜尋關鍵字..." required>
+            <button type="submit">搜尋</button>
+        </form>
+        <div class="boxes">
+            <div class="box" id="hot-topics">
+                <h2>熱門環保議題</h2>
+                <p>這裡是熱門環保議題的內文。</p>
+            </div>
+            <div class="box" id="eco-policies">
+                <h2>環保政策</h2>
+                <p>這裡是環保政策的內文。</p>
+            </div>
+            <div class="box" id="free-write">
+                <h2>自由撰寫</h2>
+                <p>這裡是自由撰寫的內文。</p>
+            </div>
+        </div>
+        <div class="recommendations">
+            <h2>推薦網站</h2>
+            <ul>
+                <li><a href="https://www.greenpeace.org">綠色和平組織</a></li>
+                <li><a href="https://www.treehugger.com">Treehug</a></li>
+                <li><a href="https://www.unep.org">聯合國環境規劃署</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="results-container">
+        <h1>Greeny Search🎄</h1>
+        <form id="results-search-form">
+            <input type="text" id="results-query" placeholder="輸入搜尋關鍵字..." required>
+            <button type="submit">搜尋</button>
+        </form>
+        <div id="results"></div>
+        <button id="back-button">返回首頁</button>
+    </div>
+    <footer>
+        聯絡方式: contact@greensearch.com
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
