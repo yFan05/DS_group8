@@ -31,13 +31,7 @@ public class WebNode
 		child.parent = this;
 	}
 
-	public boolean isTheLastChild(){
-		if (this.parent == null)
-			return true;
-		ArrayList<WebNode> siblings = this.parent.children;
-
-		return this.equals(siblings.get(siblings.size() - 1));
-	}
+	
 
 	public int getDepth(){
 		int retVal = 1;
