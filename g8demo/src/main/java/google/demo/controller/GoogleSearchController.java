@@ -22,8 +22,10 @@ public class GoogleSearchController {
     public HashMap<String, String> search(@RequestParam("q") String query) {
         try {
             ArrayList<Keyword> keywords = new ArrayList<>();
-            keywords.add(new Keyword("綠色", 1.0));
-            keywords.add(new Keyword("能源", 0.9));
+            keywords.add(new Keyword("綠色", 8));
+            keywords.add(new Keyword("能源", 6));
+            keywords.add(new Keyword("綠能", 10));
+            keywords.add(new Keyword("環保", 10));
             
             ArrayList<WebPage> webPages = googleQueryService.searchAndCalculateScore(query, keywords);
 
