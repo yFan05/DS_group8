@@ -29,7 +29,7 @@ public class GoogleQueryService {
     private String content;
 
     public GoogleQueryService() {
-        // 空的構造函數
+        // 空的構造函數 
     }
     
     public ArrayList<WebPage> searchAndCalculateScore(String searchKeyword, ArrayList<Keyword> keywords) throws IOException {
