@@ -34,7 +34,7 @@ public class GoogleOnWebApplication {
         keywords.add(new Keyword("永續", 6));
         keywords.add(new Keyword("碳排放", 6));
 
-        String query = "綠能"; 
+        String query = "環保"; 
 
         try {
             // 在這裡先抓取同義詞並加入 keywords 中
