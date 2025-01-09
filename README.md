@@ -1,7 +1,8 @@
 # Greeny Search 🌱  
 An Environmental News Search Engine  
 
-**Authors**  
+### Authors  
+**Group 8**
 - 資管二 112306013 郭孟綺  
 - 資管二 112306029 楊凡萱  
 - 資管二 112306030 莊紫喬  
