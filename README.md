@@ -68,38 +68,10 @@ An Environmental News Search Engine
 5. **Publish Greeny Online**  
    - Deploy the system and provide users with a web-based interface for environmental news browsing.  
 
----
-
-## Getting Started  
-
-### Prerequisites  
-- **Java 17+**  
-- **Spring Boot**  
-- **Maven**  
-- **JSoup** for web scraping  
-
-### Installation  
-1. Clone the repository:  
-   ```bash  
-   git clone https://github.com/your-repository/greeny-search.git  
-   cd greeny-search  
-   ```  
-2. Install dependencies:  
-   ```bash  
-   mvn install  
-   ```  
-3. Run the application:  
-   ```bash  
-   mvn spring-boot:run  
-   ```  
-4. Access the application at [http://localhost:8080](http://localhost:8080).  
-
----
 
 ## Usage  
 1. Input a keyword in the search bar (e.g., "green energy").  
 2. View ranked results based on relevance and keyword scores.  
-3. Explore additional sections for trending topics, policy updates, and user-contributed content.  
 
 ---
 
@@ -108,14 +80,5 @@ An Environmental News Search Engine
 - Enhance UI/UX for mobile compatibility.  
 - Extend the search functionality to include global policies and trends.  
 
----
-
-## Contributing  
-Contributions are welcome! Please submit a pull request or open an issue to get started.  
-
----
-
-## License  
-This project is licensed under the MIT License.  
 
 
