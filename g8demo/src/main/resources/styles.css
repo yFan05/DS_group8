@@ -63,7 +63,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #1b4d3e;
+    background-color: #1b4d3e; /* 深綠色 */
     border-color: #1b4d3e;
 }
 
