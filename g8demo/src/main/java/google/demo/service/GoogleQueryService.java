@@ -35,7 +35,7 @@ public class GoogleQueryService {
     public ArrayList<WebPage> searchAndCalculateScore(String searchKeyword, ArrayList<Keyword> keywords) throws IOException {
         HashMap<String, String> searchResults = search(searchKeyword);  // 搜尋結果
         ArrayList<WebPage> webPages = new ArrayList<>();
-        // 為每個搜尋結果創建 WebPage 並計算其分數 
+        // 為每個搜尋結果創建 WebPage 並計算其分數
         for (String title : searchResults.keySet()) {
             String url = searchResults.get(title);
             WebPage webPage = new WebPage(url, title);
