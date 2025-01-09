@@ -113,7 +113,7 @@ public class GoogleQueryService {
 
         URL u = new URL(url);
         URLConnection conn = u.openConnection();
-        // 設置 HTTP 標頭
+        // 設置 HTTP 標頭 
         conn.setRequestProperty("User-agent", "Chrome/107.0.5304.107");
         InputStream in = conn.getInputStream();
 
