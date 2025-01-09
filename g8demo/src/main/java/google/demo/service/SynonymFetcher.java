@@ -15,7 +15,7 @@ public class SynonymFetcher {
         ArrayList<String> synonyms = new ArrayList<>();
         try {
             // 獲取同義詞
-            String url = "https://www.iciba.com/" + keyword;  // 根據您的需求修改網址
+            String url = "http://localhost:8080/" + keyword;  // 根據您的需求修改網址
             Document doc = Jsoup.connect(url).get();
             
             // 根據實際網頁結構調整 CSS 選擇器
