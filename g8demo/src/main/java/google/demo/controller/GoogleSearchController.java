@@ -16,7 +16,7 @@ public class GoogleSearchController {
 	private GoogleQueryService googleQueryService;
 
 	@GetMapping("/search")
-	public HashMap<String, String> search(@RequestParam("p") String query) {
+	public HashMap<String, String> search(@RequestParam("q") String query) {
 
 		try {
 			return googleQueryService.search(query);
