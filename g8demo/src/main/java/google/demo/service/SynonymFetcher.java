@@ -16,7 +16,7 @@ public class SynonymFetcher {
         try {
             // 假設從金山詞霸或其他網站上獲取同義詞
             String url = "https://www.iciba.com/" + keyword;  // 根據您的需求修改網址
-            Document doc = Jsoup.connect(url).get();
+            Document doc = Jsoup.connect(url);
             
             // 根據實際網頁結構調整 CSS 選擇器
             Elements synonymElements = doc.select(".synonym");  // 假設同義詞被放在 .synonym 類中
