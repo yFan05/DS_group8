@@ -9,7 +9,7 @@ import java.util.HashMap;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:8080") // 根據你的前端地址調整
+@CrossOrigin(origins = "http://localhost:8081") // 根據你的前端地址調整
 public class GoogleSearchController {
 
 	@Autowired
