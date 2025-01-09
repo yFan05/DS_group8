@@ -41,7 +41,7 @@ public class GoogleQueryService {
             WebPage webPage = new WebPage(url, title);
            
             // 設置 WebPage 的分數 
-            webPage.setScore(keywords);  // 這裡會調用 WebPage 類中的 setScore 方法
+            webPage.setScore(keywords);  // 這裡會調用 WebPage 類中的 setScore 方法 
             webPages.add(webPage);
         }
 
