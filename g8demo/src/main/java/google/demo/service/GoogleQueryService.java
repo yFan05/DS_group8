@@ -47,7 +47,7 @@ public class GoogleQueryService {
 
         // 排序：首先根據標題是否包含 searchKeyword，然後再根據分數排序
         webPages.sort((a, b) -> {
-            // 1. 比較標題是否包含 searchKeyword，包含的排在前面
+            // 1. 比較標題是否包含 searchKeyword，包含的排在前面 
             boolean aContains = a.getTitle().contains(searchKeyword);
             boolean bContains = b.getTitle().contains(searchKeyword);
 
