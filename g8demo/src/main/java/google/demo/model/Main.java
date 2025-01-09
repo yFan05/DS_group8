@@ -15,8 +15,7 @@ public class Main
 		WebPage rootPage = new WebPage("http://your-url.com", "RootPage");		
 		WebTree tree = new WebTree(rootPage);
 		
-		System.out.println(" ");
-		Scanner scanner = new Scanner(System.in);
+		
 
 		while (scanner.hasNextLine()){
 			int numOfKeywords = scanner.nextInt();
