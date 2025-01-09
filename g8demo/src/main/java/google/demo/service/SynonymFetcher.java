@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import google.demo.model.Keyword;
 import org.springframework.stereotype.Service;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 
 @Service
 public class SynonymFetcher {
@@ -28,6 +32,19 @@ public class SynonymFetcher {
 
     // 根據關鍵字取得同義詞
     public ArrayList<String> getSynonyms(String keyword) {
-        return synonymDict.getOrDefault(keyword, new ArrayList<>());
+        try {
+            // 使用 Jsoup 解析網頁
+            String url = "https://www.iciba.com/" + keyword;  // 假設從金山詞霸上獲取同義詞
+            Document doc = Jsoup.connect(url).get();
+            Elements synonymElements = doc.select(".synonyms");  // 假設選擇了適合的 CSS 選擇器
+
+            for (Element synonymElement : synonymElements) {
+                synonyms.add(synonymElement.text());
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return synonyms;
+    }
     }
 }
