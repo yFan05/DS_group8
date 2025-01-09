@@ -8,7 +8,7 @@ An Environmental News Search Engine
 - 資管二 112306030 莊紫喬  
 - 資管二 112306064 周宥慈  
 - 資管二 112306089 石祐瑄
-
+ 
 ## Introduction  
 **Greeny Search** is a project focused on enhancing access to environmental information. With the rise of environmental awareness, it is essential to provide users with a tool to locate policies, regulations, and news related to green topics efficiently. Greeny Search refines search results by assigning weights to keywords and analyzing their relevance to environmental themes, ensuring precise and meaningful results.
 
